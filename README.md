@@ -62,14 +62,28 @@ streamlit run dashboard.py
 The dashboard will open in your browser at `http://localhost:8501`
 
 ## 📁 Project Structure
-├── aqi_prediction.py      # ML pipeline and model training
-├── dashboard.py           # Interactive Streamlit dashboard
-├── requirements.txt       # Python dependencies
-├── README.md             # Project documentation
-├── data/                 # Generated datasets
-├── models/               # Trained models
-├── output/               # Visualization outputs
-└── screenshots/          # Dashboard screenshots
+## Project Structure
+
+```text
+aqi-prediction-system/
+├── README.md                  # Project documentation
+├── requirements.txt           # Python dependencies
+├── .gitignore                 # Git ignore file
+├── aqi_prediction.py          # ML pipeline and model training
+├── dashboard.py               # Interactive Streamlit dashboard
+├── data/
+│   └── aqi_data.csv           # Generated synthetic dataset
+├── models/
+│   ├── random_forest_model.pkl
+│   ├── xgboost_model.pkl
+│   └── feature_names.pkl
+├── output/
+│   ├── actual_vs_predicted.png
+│   └── feature_importance.png
+└── screenshots/
+    └── dashboard_screenshot.png
+```
+
 ## Models Used
 
 ### 1. Random Forest Regressor
@@ -167,10 +181,6 @@ The dashboard will open in your browser at `http://localhost:8501`
 - [ ] Alert system for poor air quality
 - [ ] Deep learning models (LSTM for time series)
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## Author
 
 - Sun Das
@@ -186,7 +196,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-For questions or feedback, please open an issue or contact me at your.email@example.com
+For questions or feedback, please open an issue or contact me at sundas2004mid@gmail.com
 
 ---
 
