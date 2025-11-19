@@ -61,7 +61,6 @@ streamlit run dashboard.py
 
 The dashboard will open in your browser at `http://localhost:8501`
 
-## 📁 Project Structure
 ## Project Structure
 
 ```text
